@@ -44,10 +44,21 @@ body {
     image-orientation: right;
 }
 
+.left {
+  text-align: left;
+    image-orientation: left;
+}
+
 .center {
 
   text-align: center;
 }
+
+.top {
+  margin-top: 17px;
+
+}
+
 
 .image-flex {
     display: flex;
@@ -141,14 +152,13 @@ body {
 
   .header {
     display: flex;
-    height: 96px;
+    height: 33px;
     border: 3px solid rgb(66, 3, 75);
 }
 
 p {
   padding: 13px;
-  border: 2px solid rgb(44, 10, 122);
-  margin: 13px;
+    margin: 13px;
 }
 
 
@@ -159,17 +169,25 @@ table, th, td {
 
 
 .button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 13px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 6px 3px;
-  cursor: pointer;
-  border-radius: 12px;
-  margin-top: 6px;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
