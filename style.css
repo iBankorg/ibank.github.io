@@ -39,6 +39,11 @@ body {
     image-orientation: center;
 }
 
+.right {
+  text-align: right;
+    image-orientation: right;
+}
+
 .image-flex {
     display: flex;
     align-items: center;
@@ -82,12 +87,9 @@ body {
 }
 
 .column {
-    float: left;
-    width: 50%;
-    margin-left: 33px;
-    margin-right: 33px;
-    margin-top: 33px;
-    margin-bottom: 33px;
+    float: right;
+    width: 100%;
+
   }
   
   /* Clear floats after the columns */
@@ -100,8 +102,8 @@ body {
 
   .row {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: auto;
+    justify-content: auto;
   }
   
   .row2 {
@@ -110,7 +112,7 @@ body {
 
  
   .column2 {
-    float: center;
+    float: left;
     width: 100%;
     margin-left: 13px;
     margin-right: 13px;
@@ -139,26 +141,31 @@ body {
 }
 
 p {
-  height: 30px;
-  
+  padding: 13px;
+  border: 2px solid rgb(44, 10, 122);
+  margin: 33px;
 }
 
+
+table, th, td {
+  border: 1px solid rgb(247, 243, 243);
+}
+
+
+
 .button {
-  background-color: #8C3CF5; /* Green */
+  background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 13px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  transition-duration: 0.4s;
-    
-}
-
-.button:hover {
-  background-color: #4677ED; /* Green */
-  color: white;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  
 }
 
 
